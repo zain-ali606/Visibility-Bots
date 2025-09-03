@@ -4,9 +4,9 @@ import Navbar from "./components/Pages/Header";
 import Home from "./components/Pages/Home.jsx";
 
 import Footer from "./components/Pages/Footer";
-import SmartAgriculture from "./components/Solutions/SmartAgriculture";
-import Smartcity from "./components/Solutions/SmartCity";
-import SmartFactory from "./components/Solutions/SmartFactory"
+import SmartAgriculture from "./components/Pages/Solutions/SmartAgriculture.js";
+import Smartcity from "./components/Pages/Solutions/SmartCity.jsx";
+import SmartFactory from "./components/Pages/Solutions/SmartFactory.jsx"
 
 function App() {
   return (
