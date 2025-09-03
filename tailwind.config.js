@@ -23,7 +23,7 @@ export default {
         slideInUp: 'slideInUp 1s ease-out forwards',
       },
       fontFamily: {
-        aptos: ['Aptos', 'sans-serif'], // custom font
+        aptos: ['Aptos', 'sans-serif','"Times New Roman"', "Times", "serif"], // custom font
       }
     },
   },

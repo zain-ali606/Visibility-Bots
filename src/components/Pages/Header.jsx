@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 
+
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -33,9 +34,9 @@ const Navbar = () => {
       name: "Solutions",
       href: "/solutions",
       dropdown: [
-        { name: "Smart Factory", href: "#/smart-factory" },
-        { name: "Smart City", href: "/smart-city" },
-        { name: "Smart Agriculture", href: "/smart-agriculture" },
+        { name: "Smart Factory", href: "/solutions/SmartFactory" },
+        { name: "Smart City", href: "/Solutions/SmartCity" },
+        { name: "Smart Agriculture", href: "/Solutions/SmartAgriculture" },
         { name: "Smart Buildings", href: "/smart-buildings" },
       ]
     },

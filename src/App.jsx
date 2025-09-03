@@ -1,33 +1,32 @@
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Pages/Header";
+import Home from "./components/Pages/Home.jsx";
 
-
-import './App.css'
-import Navbar from './components/Pages/Header'
-import {Home, ProcessCircle, AboutSection, MissionSection} from './components/Pages/Home'
-import SmartBuildingSection from './components/Pages/SmartBuildingSection'
-import ExpertiseSection from './components/Pages/ExpertiseSection'
-import TestimonialsSection from './components/Pages/TestimonialsSection'
-import ContactSection from './components/Pages/ContactSection'
-import Footer from './components/Pages/Footer'
-
+import Footer from "./components/Pages/Footer";
+import SmartAgriculture from "./components/Solutions/SmartAgriculture";
+import Smartcity from "./components/Solutions/SmartCity";
+import SmartFactory from "./components/Solutions/SmartFactory"
 
 function App() {
-  
-
   return (
     <>
-    <Navbar></Navbar>
-    <Home></Home>
-    <ProcessCircle/>
-    <AboutSection></AboutSection>
-    <MissionSection></MissionSection>
-    <SmartBuildingSection/> 
-    <TestimonialsSection></TestimonialsSection>  
-    <ExpertiseSection></ExpertiseSection>
-    <ContactSection></ContactSection>
-    <Footer/>
-    
+  <Router>
+  <Navbar />
+      <Routes>
+        {/* Home page */}
+        <Route path="/" element={<Home />} />
+
+        {/* Other pages */}
+        <Route path="/Solutions/SmartFactory" element={<SmartFactory />} />
+        <Route path="/Solutions/SmartCity" element={<Smartcity/>} />
+        <Route path="/Solutions/SmartAgriculture" element={<SmartAgriculture />} />
+      </Routes>
+      <Footer />
+    </Router>
+  
     </>
-  )
+  );
 }
 
-export default App
+export default App;
